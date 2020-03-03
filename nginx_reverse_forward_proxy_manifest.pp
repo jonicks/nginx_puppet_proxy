@@ -27,11 +27,11 @@ node '<node>' {
 	
 }
   file { '/etc/nginx/conf.d/custom_log_parameters.conf':
-    ensure => 'file',
+    		ensure => 'file',
 		owner  => 'root',
 		group  => 'root',
 		mode   => '0644',
-    content => 'log_format  time_taken  \'$remote_addr - $remote_user [$time_local] "$request" \'
+    		content => 'log_format  time_taken  \'$remote_addr - $remote_user [$time_local] "$request" \'
                     \'request_time=$request_time $status $body_bytes_sent "$http_referer" \' # with the first parameter we are logging the time it takes for a request to accomplish
                     \'"$http_user_agent" "$http_x_forwarded_for"\';
 ',
