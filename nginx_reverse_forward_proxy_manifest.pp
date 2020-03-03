@@ -26,7 +26,7 @@ node '<node>' {
 	}
 	
 }
-  file { '/etc/nginx/conf.d/custom_log_parameters.conf':
+ 	file { '/etc/nginx/conf.d/custom_log_parameters.conf':
     		ensure => 'file',
 		owner  => 'root',
 		group  => 'root',
