@@ -1,0 +1,1 @@
+# nginx_puppet_proxy
