@@ -12,9 +12,9 @@ node '<node>' {
 		proxy_set_header => ['X-Forwarded-Proto $scheme'],
 	}	
 		
-  nginx::resource::location { '/<resource>/':
-    proxy => '<destination server, HTTP>', # for example: http://172.16.1.30:3000
-    server => '<FQDN>',
+ 	nginx::resource::location { '/<resource>/':
+    		proxy => '<destination server, HTTP>', # for example: http://172.16.1.30:3000
+    		server => '<FQDN>',
 		ssl_only => true,
 	}	
 	
